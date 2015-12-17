@@ -9,7 +9,6 @@ import derelict.opengl3.gl3;
 import derelict.glfw3.glfw3;
 
 pragma(lib, "DerelictUtil.lib");
-pragma(lib, "DerelictSDL2.lib");
 pragma(lib, "DerelictGL3.lib");
 pragma(lib, "lib\\DerelictGLFW3.lib");
 pragma(lib, "lib\\gl3n.lib");
