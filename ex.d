@@ -9,7 +9,10 @@ extern(C) nothrow void glfwPrintError(int error, const(char)* description) {
 }
 
 void glCheckError() {
-	if (glGetError() != GL_NO_ERROR) {
-		throw new Exception("OpenGL encountered an error!");
+	debug
+	{
+		if (glGetError() != GL_NO_ERROR) {
+			throw new Exception("OpenGL encountered an error!");
+		}
 	}
 }

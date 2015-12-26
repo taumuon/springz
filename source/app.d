@@ -173,9 +173,9 @@ void main() {
 	GLFWwindow* window;
 
 	if (fullscreen) {
-		window = glfwCreateWindow(640, 480, "Hello World", glfwGetPrimaryMonitor(), null);
+		window = glfwCreateWindow(640, 480, "Springz", glfwGetPrimaryMonitor(), null);
 	} else {
-		window = glfwCreateWindow(640, 480, "Hello World", null, null);
+		window = glfwCreateWindow(640, 480, "Springz", null, null);
 	}
 
 	if (!window) {

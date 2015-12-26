@@ -29,8 +29,13 @@ class Node
 	@property fixed() { return _fixed; }
 	@property fixed(bool value) { _fixed = value; }
 
+	// enum damping = 0.00001;
+	enum damping = 0.0;
+	
 	public void Update(double deltaT)
 	{
+		_acceleration -= _velocity.normalized() * damping;
+	
 		_velocity += _acceleration * deltaT;
 		_position += _velocity * deltaT;
 	}
